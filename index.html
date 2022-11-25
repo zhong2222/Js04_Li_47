@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相談室</title>
+    <link rel="stylesheet" href="css/room.css">
+</head>
+
+<body>
+
+    <!-- コンテンツ表示画面 -->
+    <!-- <div> -->
+    <div class="window">
+        <div class="title" >相談室</div>
+        <div id="output"></div>
+        <div class="input">
+            <textarea id="text" cols="100" rows="1"></textarea>
+            <button id="send">送信</button>
+        </div>
+    <!-- </div> -->
+    </div>
+    <div class="input_name"> お名前：<input type="text" id="uname" > </div>
+    <!-- <img src="" id="prof"> -->
+    <div id="choice" class="input_icon"><img src="" id="prof"></div>
+
+<!-- 画像 -->
+<ul>
+    <li><img class="icon" data-img="1" src="img/d.png" alt=""></li>
+    <li><img class="icon" data-img="2" src="img/m.png" alt=""></li>
+    <li><img class="icon" data-img="3" src="img/w.png" alt=""></li>
+    <li><img class="icon" data-img="4" src="img/p.png" alt=""></li>
+</ul>
+<!-- 画像 -->
+
+<div class="btn">
+    <button id="START" class="clear_btn">START</button>
+    <button id="clear" class="clear_btn">CLEAR</button> 
+    <button id="out" class="clear_btn">LOGOUT</button>    
+</div>
+
+    <!--/ コンテンツ表示画面 -->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="js/room.js"></script>
+</body>
+</html>

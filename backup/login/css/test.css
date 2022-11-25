@@ -1,0 +1,174 @@
+
+/*/////////////////////////////////////////////////
+//LINE風チャット画面(会話方式)を記事に表示する方法
+/////////////////////////////////////////////////*/
+
+.line__container {
+    padding:0;
+    background: #7494C0;
+    overflow: hidden;
+    max-width: 400px;
+    margin: 20px auto;
+    font-size: 80%;
+  }
+  
+  /* 1 タイトル部分 */
+  .line__container .line__title {
+    background: #273246;
+    padding: 10px;
+    text-align: center;
+    font-size: 150%;
+    color: #ffffff;
+  }
+  
+  /* 2 会話部分 */
+  .line__container .line__contents {
+    padding: 10px;
+    overflow: hidden;
+    line-height: 135%;
+  }
+  
+  .line__container .scroll {
+    height: 500px;
+    overflow-y: scroll;
+  }
+  
+  /* 4 スタンプ画像最大幅 */
+  .line__container .stamp img {
+    max-width:120px;
+  }
+  
+  /* 5 相手の会話 */
+  .line__container .line__left {
+      /*width: 100%;*/ display: inline-block;
+      position: relative;
+      display: block;
+      margin-bottom: 5px;
+      max-width: 90%;
+      clear: both;
+  }
+  
+  /* 6 相手 アイコン画像 */
+  .line__container .line__left figure {
+      width: 50px;
+      position: absolute;
+      top: 15px;
+      left: 0;
+      padding: 0;
+      margin: 0;
+  
+  }
+  
+  /* 7 相手 正方形を用意 */
+  .line__container .line__left figure img{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .line__container .line__left .line__left-text {
+    margin-left: 60px;      /* 70px */
+  }
+  
+  .line__container .line__left .line__left-text .name {
+    font-size: 80%;
+    color: #ffffff;
+  }
+  
+  /* 10 相手 コメントエリア */
+  .line__container .line__left .text {
+    margin: 0; display: inline-block;
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #EDF1EE;
+    color: #000000;
+    font-size: 12;
+  }
+  
+  /* 11 相手 吹き出し */
+  .line__container .line__left .text::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: -10px;
+    top: 3px;
+    border-right: 20px solid #EDF1EE;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    transform: rotate(35deg); -webkit-transform: rotate(35deg);
+  }
+  
+  /* 12 自分の会話 */
+  .line__container .line__right {
+      position: relative;
+      display: block;
+      margin: 5px 0;
+      max-width: 95%;
+      float: right;
+      margin-right: 5px;   /* 15px */
+      clear: both;
+  }
+  
+  /* 13 自分 コメントエリア */
+  .line__container .line__right .text {
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0;
+    margin-left: 80px;
+    background-color: #8DE055;
+    color: #000000;
+    font-size: 11;
+  }
+  
+  /* 14 自分 吹き出し */
+  .line__container .line__right .text::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    right: -10px;
+    top: 3px;
+    border-right: 20px solid #8DE055;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: rotate(-35deg); -webkit-transform: rotate(-35deg);
+  }
+  
+  /* 15 自分がスタンプを送る時 */
+  .line__container .line__right .stamp {
+    position: relative;
+    margin-left: 80px;
+  }
+  
+  /* 16 時間エリア 相手
+  .line__container .line__left .time {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0px;
+    text-align: left;
+    right: 0px;
+    bottom: 0px;
+    font-size: 80%;
+    color: #ffffff;
+  }
+  */
+  
+  /* 17 自分 既読／時間エリア */
+  .line__container .line__right .date {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    text-align: right;
+    left: -25px;
+    bottom: 0px;
+    font-size: 80%;
+    color: #ffffff;
+  }
+  
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吹き出し</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+    
+
+<div class="line__container" id="lineContainer">
+    <!-- タイトル -->
+    <div class="line__title">
+      石原さとみのキウイ食べてるう～？
+    </div>
+
+    <!-- ▼会話エリア scrollを外すと高さ固定解除 -->
+    <div class="line__contents scroll">
+
+      <!-- 1. 相手の吹き出し <br><br>夏バテにはやっぱりキウイだよね！ -->
+      <div class="line__left">
+        <figure>
+          <img src="img/ishihara-satomi-3.jpg">
+        </figure>
+        <div class="line__left-text">
+          <div class="name"><br>さとみ</div>
+          <div class="text" id="talk_fr1">ok<br></div>
+            <!--<div style="display:inline-block;margin-left:0" class="time"><span class="time2">10:30</span></div>-->
+        </div>
+      </div>
+
+      <!-- 1. 自分の吹き出し -->
+      <div class="line__right">
+        <div class="text" id="talk_my1">?<br><br></div>
+        <span class="date">既読<br>0:30</span>
+      </div>
+
+      <!-- 2. 相手の吹き出し -->
+      <div class="line__left">
+        <figure>
+          <img src="img/ishihara-satomi-4.jpg">
+        </figure>
+        <div class="line__left-text">
+          <div class="name"><br>さとみ</div>
+          <div class="text" id="talk_fr2">mm<br></div>
+             <!--<span class="time">10:30</span>-->
+        </div>
+      </div>
+
+      <!-- 相手のスタンプ -->
+      <div class="line__left">
+        <div class="stamp"><img src="./stamp/22.png"></div>
+      </div>
+
+      <!-- 2. 自分の吹き出し -->
+      <div class="line__right">
+        <div class="text" id="talk_my2">??<br><br></div>
+        <span class="date">既読<br>0:30</span>
+      </div>
+
+      <!-- 3. 相手の吹き出し -->
+      <div class="line__left">
+        <figure>
+          <img src="img/ishihara-satomi2.jpg">
+        </figure>
+        <div class="line__left-text">
+          <div class="name"><br>さとみ</div>
+          <div class="text" id="talk_fr3">456</div>
+        </div>
+      </div>
+
+      <!-- 3. 自分の吹き出し わかりました。<br> 見ましょう(・ω・) -->
+      <div class="line__right">
+        <div class="text" id="talk_my3">786<br><br></div>
+        <span class="date">既読<br>0:30</span>
+      </div>
+
+      <!-- 自分のスタンプ -->
+      <div class="line__right">
+        <div class="stamp"><img src="./stamp/13.png"></div>
+        <span class="date">既読<br>0:30</span>
+      </div>
+
+    </div>
+    <!--　▲会話エリア ここまで -->
+  </div>
+</body>
+</html>

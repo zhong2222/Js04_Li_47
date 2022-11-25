@@ -1,0 +1,133 @@
+@charset "utf8";
+body{
+    margin: auto;
+    padding: 0px;
+}
+
+.input_name{ /*お名前*/
+    text-align: center;
+    /* padding: 20px; */
+    margin: 20px;
+}
+.input_icon{ /*icon*/
+    text-align: center;
+}
+.window{
+    width:1000px;
+    margin: auto;
+    border: 1px solid #000000;
+}
+
+.title{ /*相談室*/
+    text-align: center;
+    background-color:  #a5c0f3;
+    padding: 10px;
+    font-size: 150%;
+    color: #ffffff;
+}
+
+#output {  /* textarea*/
+    background: #000000;   
+    font-size: 100%;
+    height: 800px;
+    overflow: scroll;
+}
+
+.msg:nth-child(odd) {
+    width: 45%;
+    /* background: #9b9c9e; */
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.msg:nth-child(even) {
+    width: 45%;
+    /* background: #b7e29a; */
+    margin-left: auto;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.msg_text:nth-child(odd) {
+    width: 100%;
+    background: #9b9c9e;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #ffffff;
+}
+/* .msg_text:nth-child(even) {
+    width: 100%;
+    background: #b7e29a;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #ffffff;
+} */
+
+.input{
+display: flex;
+/* justify-content: space-evenly; */
+justify-content: center;
+height: 30px;
+}
+
+.btn{
+    text-align: center;
+    padding: 20px;
+}
+.clear_btn {
+
+    display: inline-block;
+    color: #333333;
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd)); */
+    /* background-color: #dddddd; */
+    border-radius: 48px;
+    border: 1px solid gray;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    width: 8%
+    
+}
+
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    border-top: none;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:30%;
+    margin: auto;
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    border: none;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    text-align: center;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
