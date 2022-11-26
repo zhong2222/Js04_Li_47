@@ -171,7 +171,7 @@ $(document).on("click", "#delete", function () {
   // console.log(v, "親");
   let aa = $(this).data("a"); //data-a data-は省略するので　「a」
   console.log(aa, "カギ");
-  remove(ref(db, "room/" + aa));//aaカギのデータを削除
+  remove(ref(db, "users/"+uid+"/chat/" + aa));//aaカギのデータを削除
   // remove(dbRef); //remove(deref)=>全削除
   location.reload(); // jsのおまじない、本来はfirebase側に onChildRemoved
 
